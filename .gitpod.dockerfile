@@ -13,6 +13,8 @@ RUN apt-get update \
     && add-apt-repository ppa:dawidd0811/neofetch\
     && apt-get update\
     && apt-get install -y neofetch \
+    # htop
+    && apt-get install -y htop \
     # native-keymap
     && apt-get install -y libx11-dev libxkbfile-dev \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
