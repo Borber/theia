@@ -9,8 +9,12 @@ RUN apt-get update \
     && apt-get install -y libgtk-3-0 libnss3 libasound2 \
     # zsh
     && apt-get install -y zsh git-core \
-    # native-keymap
-    && apt-get install -y libx11-dev libxkbfile-dev \
+    # neofetch
+    && add-apt-repository ppa:dawidd0811/neofetch\
+    && apt-get update\
+    && apt-get install -y neofetch
+# native-keymap
+&& apt-get install -y libx11-dev libxkbfile-dev \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 RUN git clone https://github.com/robbyrussell/oh-my-zsh.git /home/gitpod/.oh-my-zsh \
     && cp /home/gitpod/.oh-my-zsh/templates/zshrc.zsh-template /home/gitpod/.zshrc \
