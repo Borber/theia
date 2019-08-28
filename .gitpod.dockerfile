@@ -19,9 +19,6 @@ RUN bash -c ". .nvm/nvm.sh \
     && nvm install 10 \
     && nvm use 10 \
     && npm install -g yarn"
-# zsh
-RUN git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
-    && cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc \
-    && chsh -s /bin/zsh
+
 # Give back control
 USER root
