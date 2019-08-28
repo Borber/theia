@@ -14,3 +14,8 @@ tasks:
 github:
   prebuilds:
     pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - formulahendry.code-runner@0.9.14:U0vUPTCchGiTYlRHpW9ljQ==
+    - liviuschera.noctis@10.5.0:sPM6LE5W2B1W2/1ERvdi5w==
