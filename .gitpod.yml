@@ -19,3 +19,10 @@ vscode:
   extensions:
     - formulahendry.code-runner@0.9.14:U0vUPTCchGiTYlRHpW9ljQ==
     - liviuschera.noctis@10.5.0:sPM6LE5W2B1W2/1ERvdi5w==
+    - eamodio.gitlens@9.9.3:4g0pgzmxBH0HkAs5mY8BWQ==
+    - esbenp.prettier-vscode@2.2.2:KF7uv+/v78QclIpOv6wh6g==
+    - naumovs.color-highlight@2.3.0:6nKORbxgnWjNaN6xACiaQQ==
+    - oderwat.indent-rainbow@7.4.0:nth8lnJRnQu9NcWvNc9KPA==
+    - shardulm94.trailing-spaces@0.3.1:EAY8DpjNUWAX4Yxx9aQPRQ==
+    - vincaslt.highlight-matching-tag@0.9.3:WpvKPeivSaPSn+9Akw7tng==
+    - Zignd.html-css-class-completion@1.19.0:b3YWQQIEP1z3u93nyLX0UA==
