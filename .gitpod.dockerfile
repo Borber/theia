@@ -12,6 +12,9 @@ RUN apt-get update \
     # native-keymap
     && apt-get install -y libx11-dev libxkbfile-dev \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+RUN git clone https://github.com/robbyrussell/oh-my-zsh.git /home/gitpod/.oh-my-zsh \
+    && cp /home/gitpod/.oh-my-zsh/templates/zshrc.zsh-template /home/gitpod/.zshrc \
+    && chsh -s /bin/zsh gitpod
 
 USER gitpod
 # Apply user-specific settings
