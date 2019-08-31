@@ -17,6 +17,7 @@ RUN apt-get update \
     && apt-get install -y htop \
     # 7z
     && apt-get install -y p7zip-rar p7zip-full p7zip \
+    && apt-get install fuse \
     # native-keymap
     && apt-get install -y libx11-dev libxkbfile-dev \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
