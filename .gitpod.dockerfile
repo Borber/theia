@@ -30,7 +30,9 @@ RUN git clone https://github.com/robbyrussell/oh-my-zsh.git /home/gitpod/.oh-my-
 
 RUN wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh
 
-RUN pip3 install onedrivecmd
+RUN pip install—upgrade pip \ 
+    && pip3 install --upgrade setuptools \
+    && pip3 install onedrivecmd
 
 USER gitpod
 # Apply user-specific settings
