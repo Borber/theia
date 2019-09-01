@@ -30,7 +30,6 @@ RUN git clone https://github.com/robbyrussell/oh-my-zsh.git /home/gitpod/.oh-my-
 
 RUN wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh
 
-RUN wget https://rclone.org/install.sh && bash install.sh
 
 USER gitpod
 # Apply user-specific settings
